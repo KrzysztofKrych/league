@@ -1,7 +1,7 @@
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 
-const Home: NextPage = () => {
+const MapPage: NextPage = () => {
   const Map = dynamic(
     () => import('../components/Map/Map'),
     { ssr: false } // It's what prevents server-side render
@@ -9,4 +9,4 @@ const Home: NextPage = () => {
   return <Map />;
 };
 
-export default Home;
+export default MapPage;

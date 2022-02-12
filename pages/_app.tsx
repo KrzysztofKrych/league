@@ -1,8 +1,9 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { TripProvider } from '../contexts/trip/TripProvider';
+import { appWithTranslation } from 'next-i18next';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps,  }: AppProps) {
   return (
     <TripProvider>
       <Component {...pageProps} />
@@ -10,4 +11,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

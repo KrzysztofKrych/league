@@ -10,10 +10,10 @@ const Map = () => {
   console.log(trip);
 
   useEffect(() => {
-    tripDispatch({
-      type: TripAction.UPDATE_TRIP_CONTEXT_ACTION,
-      payload: { body: { from: 'test' } },
-    });
+    // tripDispatch({
+    //   type: TripAction.UPDATE_TRIP_CONTEXT_ACTION,
+    //   payload: { body: { from: 'test' } },
+    // });
   }, []);
 
   return (

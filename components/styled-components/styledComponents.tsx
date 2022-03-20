@@ -4,6 +4,7 @@ import { Menu } from 'antd';
 export const StyledMenu = styled(Menu)`
     &.ant-menu {
         width: 256px;
+        height: 100vh;
     }
 `
 

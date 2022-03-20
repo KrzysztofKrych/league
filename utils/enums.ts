@@ -1,7 +1,7 @@
 export enum Route {
-    DASHBOARD = '/',
-    INDIVIDUAL_LEADERBOARD = '/individual-leaderboard'
+  DASHBOARD = '/',
+  INDIVIDUAL_LEADERBOARD = '/individual-leaderboard',
 }
 export enum BackendRequestUrls {
-    GET_TABLE = '/table'
+  GET_TABLE = '/table',
 }

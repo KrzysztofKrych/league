@@ -1,4 +1,4 @@
-import { Route } from "../../../utils/enums";
+import { Route } from '../../../utils/enums';
 
 export interface MainMenuItem {
   name: string;

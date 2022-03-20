@@ -6,10 +6,10 @@ import { OnInitRequests } from '../components/OnInitRequests/OnInitRequests';
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <OnInitRequests />
-    <Component {...pageProps} />
+      <OnInitRequests />
+      <Component {...pageProps} />
     </>
-  )
+  );
 }
 
 export default MyApp;

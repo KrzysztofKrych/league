@@ -1,5 +1,3 @@
 export const IndividualLeaderboard = () => {
-    return (
-        <div>individual</div>
-    )
-}
+  return <div>individual</div>;
+};

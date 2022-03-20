@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Menu } from 'antd';
+import { Menu, Table } from 'antd';
 
 export const StyledMenu = styled(Menu)`
   &.ant-menu {
@@ -11,3 +11,5 @@ export const StyledMenu = styled(Menu)`
 export const StyledFlex = styled.div`
   display: flex;
 `;
+
+export const StyledTable = styled(Table)``;

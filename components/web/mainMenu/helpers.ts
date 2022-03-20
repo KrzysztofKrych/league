@@ -1,4 +1,4 @@
-import { Route } from "../../../utils/enum"
+import { Route } from "../../../utils/enums"
 
 export const getDefaultSelectedMenuItem = (asPath: Route): string => {
     switch(asPath){

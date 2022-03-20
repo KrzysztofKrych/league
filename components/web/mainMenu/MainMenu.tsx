@@ -1,6 +1,6 @@
 import { Menu } from 'antd';
 import { useRouter } from 'next/router';
-import { Route } from '../../../utils/enum';
+import { Route } from '../../../utils/enums';
 import { StyledMenu } from '../../styled-components/styledComponents';
 import { MENU_ITEMS } from './consts';
 import { getDefaultSelectedMenuItem } from './helpers';

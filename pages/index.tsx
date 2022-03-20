@@ -1,12 +1,9 @@
 import type { NextPage } from 'next';
-import Link from 'next/link';
+import { WebComponentContainer } from '../components/hoc/webComponentContainer/WebComponentContainer';
+import { Dashboard } from '../components/web/dashboard/Dashboard';
 
-const Home: NextPage = () => {
-  return (
-    <Link href="/map">
-      Go to map
-    </Link>
-  )
+const DashboardPage: NextPage = () => {
+  return WebComponentContainer(<Dashboard />);
 };
 
-export default Home;
+export default DashboardPage;

@@ -3,11 +3,11 @@ import { Menu, Table } from 'antd';
 import { COLORS } from './colors';
 
 export const StyledMenu = styled(Menu)`
-    &.ant-menu {
-        width: 256px;
-        height: 100vh;
-    }
-`
+  &.ant-menu {
+    width: 256px;
+    height: 100vh;
+  }
+`;
 
 export const StyledFlex = styled.div<{ direction?: string }>`
   display: flex;

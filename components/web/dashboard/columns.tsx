@@ -1,3 +1,5 @@
+import { TableItemDto } from '../../../services/table/interfaces';
+
 export const columns = () => [
   {
     title: 'Name',

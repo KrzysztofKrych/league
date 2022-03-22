@@ -2,6 +2,11 @@ import { TableItemDto } from '../../../services/table/interfaces';
 
 export const columns = () => [
   {
+    title: 'Position',
+    dataIndex: 'position',
+    key: 'position',
+  },
+  {
     title: 'Name',
     dataIndex: 'name',
     key: 'name',

@@ -13,7 +13,7 @@ export const Dashboard = ({ table }: Props) => {
       <StyledFlex direction="column">
         <HeaderLabel />
         <StyledTable
-          rowKey={(record) => (record as TableItemDto).teamId}
+          rowKey={(record) => (record as TableItemDto).id}
           pagination={false}
           size="middle"
           columns={columns()}

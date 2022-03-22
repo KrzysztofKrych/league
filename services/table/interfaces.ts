@@ -1,8 +1,9 @@
 export interface TableItemDto {
   teamName: string;
-  teamId: number;
+  id: string;
   season: string;
   results: ResultDto;
+  position: number
 }
 
 export interface ResultDto {

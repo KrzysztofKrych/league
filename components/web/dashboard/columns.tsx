@@ -2,6 +2,14 @@ import { LeagueDto, ResultDto } from '../../../services/table/interfaces';
 
 export const columns = () => [
   {
+    title: 'Position',
+    dataIndex: '',
+    key: 'position',
+    render: (result: ResultDto) => {
+      return result.position;
+    },
+  },
+  {
     title: 'teamId',
     dataIndex: 'teamId',
     key: 'teamId',

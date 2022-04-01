@@ -1,41 +1,49 @@
-import { ResultDto, TableItemDto } from '../../../services/table/interfaces';
+import { LeagueDto, ResultDto } from '../../../services/table/interfaces';
 
 export const columns = () => [
   {
-    title: 'Name',
-    dataIndex: 'name',
-    key: 'name',
+    title: 'Position',
+    dataIndex: '',
+    key: 'position',
+    render: (result: ResultDto) => {
+      return result.position;
+    },
+  },
+  {
+    title: 'teamId',
+    dataIndex: 'teamId',
+    key: 'teamId',
   },
   {
     title: 'W',
     dataIndex: '',
     key: 'won',
-    render: (table: TableItemDto) => {
-      return table.results.won;
+    render: (result: ResultDto) => {
+      return result.won;
     },
   },
   {
     title: 'L',
     dataIndex: '',
     key: 'lost',
-    render: (table: TableItemDto) => {
-      return table.results.lost;
+    render: (result: ResultDto) => {
+      return result.lost;
     },
   },
   {
     title: 'D',
     dataIndex: '',
     key: 'draw',
-    render: (table: TableItemDto) => {
-      return table.results.draw;
+    render: (result: ResultDto) => {
+      return result.draw;
     },
   },
   {
     title: 'Points',
     dataIndex: '',
     key: 'points',
-    render: (table: TableItemDto) => {
-      return table.results.points;
+    render: (result: ResultDto) => {
+      return result.points;
     },
   },
 ];

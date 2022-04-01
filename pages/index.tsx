@@ -1,21 +1,21 @@
 import type { NextPage } from 'next';
 import { WebComponentContainer } from '../components/hoc/webComponentContainer/WebComponentContainer';
 import { Dashboard } from '../components/web/dashboard/Dashboard';
-import { TableItemDto } from '../services/table/interfaces';
-import { TableService } from '../services/table/TableService';
+import { LeagueDto } from '../services/table/interfaces';
+import { LeagueService } from '../services/table/TableService';
 
 interface Props {
-  table: TableItemDto[];
+  league: LeagueDto;
 }
 
-const DashboardPage = ({ table }: Props) => {
-  return WebComponentContainer(<Dashboard table={table} />);
+const DashboardPage: NextPage<Props> = ({ league }) => {
+  return WebComponentContainer(<Dashboard league={league} />);
 };
 
 DashboardPage.getInitialProps = async () => {
-  const res = await TableService.getTable('1');
+  const res = await LeagueService.getLeague('624737b5234f82a64bebf86e');
   return {
-    table: res.data.data,
+    league: res.data.data,
   };
 };
 

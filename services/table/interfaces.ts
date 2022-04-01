@@ -1,8 +1,8 @@
-export interface TableItemDto {
-  teamName: string;
-  teamId: number;
+export interface LeagueDto {
+  _id: string;
+  name: string;
   season: string;
-  results: ResultDto;
+  results: ResultDto[];
 }
 
 export interface ResultDto {
@@ -10,4 +10,6 @@ export interface ResultDto {
   lost: number;
   draw: number;
   points: number;
+  teamId: string;
+  position: number;
 }

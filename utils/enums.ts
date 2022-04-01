@@ -3,5 +3,5 @@ export enum Route {
   INDIVIDUAL_LEADERBOARD = '/individual-leaderboard',
 }
 export enum BackendRequestUrls {
-  GET_TABLE = '/table',
+  GET_LEAGUE = '/leagues',
 }

@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import { TableItemDto } from '../../../services/table/interfaces';
+import { LeagueDto } from '../../../services/table/interfaces';
 import { StyledTable } from '../../styled-components/styledComponents';
 import { columns } from './columns';
 
 interface Props {
-  table: TableItemDto[];
+  league: LeagueDto;
 }
 
-export const Dashboard = ({ table }: Props) => {
-  return <StyledTable pagination={false} size="middle" columns={columns()} dataSource={table} />;
+export const Dashboard = ({ league }: Props) => {
+  return <StyledTable pagination={false} size="middle" columns={columns()} dataSource={league.results} />;
 };

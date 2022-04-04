@@ -10,9 +10,12 @@ export const columns = () => [
     },
   },
   {
-    title: 'teamId',
-    dataIndex: 'teamId',
-    key: 'teamId',
+    title: 'Team',
+    dataIndex: '',
+    key: 'team',
+    render: (result: ResultDto) => {
+      return result.team.name;
+    },
   },
   {
     title: 'W',
